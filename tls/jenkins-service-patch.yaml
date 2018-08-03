@@ -1,0 +1,4 @@
+metadata:
+  annotations:
+    fabric8.io/expose: "true"
+    fabric8.io/exposeUrl: https://jenkins.jx.35.189.113.154.nip.io

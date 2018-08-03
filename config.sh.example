@@ -1,0 +1,12 @@
+#!/bin/bash
+PROJECT_ID=jx-project
+CLUSTER_NAME=jx
+ZONE=europe-west2-a
+MACHINE_TYPE=n1-standard-2
+MIN_NUM_NODES=3
+MAX_NUM_NODES=5
+DISK_SIZE=100
+NAMESPACE=jx
+GITHUB_TOKEN=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+GITHUB_USERNAME=myusername
+JENKINS_ADMIN_PASSWORD=xxxxxxxxxxx

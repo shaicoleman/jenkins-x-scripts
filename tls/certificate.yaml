@@ -1,0 +1,25 @@
+apiVersion: certmanager.k8s.io/v1alpha1
+kind: Certificate
+metadata:
+  name: jx-cert
+spec:
+  secretName: tls-jx
+  issuerRef:
+    name: letsencrypt-staging
+    kind: ClusterIssuer
+  commonName: jenkins.jx.35.189.69.77.nip.io
+  dnsNames:
+    - chartmuseum.jx.35.189.69.77.nip.io
+    - docker-registry.jx.35.189.69.77.nip.io
+    - monocular.jx.35.189.69.77.nip.io
+    - nexus.jx.35.189.69.77.nip.io
+  acme:
+    config:
+    - http01:
+        ingressClass: nginx
+      domains:
+      - chartmuseum.jx.35.189.69.77.nip.io
+      - docker-registry.jx.35.189.69.77.nip.io
+      - jenkins.jx.35.189.69.77.nip.io
+      - monocular.jx.35.189.69.77.nip.io
+      - nexus.jx.35.189.69.77.nip.io
